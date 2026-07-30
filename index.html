@@ -99,6 +99,7 @@ h2.section-title em{color:var(--verde-salvia);font-style:italic;}
 .tese{text-align:center;}
 .tese-inner{max-width:820px;margin:0 auto;}
 .tese h2{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(24px,3.4vw,38px);line-height:1.4;letter-spacing:-0.005em;color:var(--azul-profundo);margin-bottom:32px;}
+.tese h2 em{color:var(--verde-salvia);font-style:italic;}
 .tese p{font-size:16px;color:var(--text-muted);line-height:1.85;max-width:640px;margin:0 auto 14px;}
 .tese-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 32px;width:220px;}
 .tese-divider .line{flex:1;height:1px;background:var(--border-gold);}
@@ -134,6 +135,47 @@ h2.section-title em{color:var(--verde-salvia);font-style:italic;}
 .case-card span{font-size:13px;color:var(--text-muted);font-weight:500;}
 .case-card .tag{font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--dourado);font-weight:700;}
 .cases-cta{font-family:'Playfair Display',serif;font-style:italic;font-size:19px;color:var(--azul-profundo);}
+
+/* SOLUÇÕES */
+.solucoes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;text-align:left;}
+.solucao-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:30px 26px;transition:border-color 0.3s,transform 0.2s;}
+.solucao-card:hover{border-color:var(--border-gold);transform:translateY(-3px);}
+.solucao-num{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--dourado);margin-bottom:12px;}
+.solucao-card h3{font-family:'Playfair Display',serif;font-weight:500;font-size:18px;color:var(--azul-profundo);margin-bottom:10px;}
+.solucao-card p{font-size:13.5px;color:var(--text-muted);line-height:1.65;}
+
+/* O QUE SUA EMPRESA PASSA A TER */
+.ganhos-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:44px;max-width:820px;margin-left:auto;margin-right:auto;text-align:left;}
+.ganho-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 20px;font-size:14.5px;color:var(--azul-profundo);font-weight:500;}
+
+/* QUALIFICAÇÃO fechamento */
+/* QUALIFICAÇÃO */
+.qualifica{background:var(--cinza-quente);}
+.qualifica-inner{max-width:1000px;margin:0 auto;}
+.qualifica-header{text-align:center;margin-bottom:40px;}
+.qualifica-header .section-eyebrow{justify-content:center;}
+.qualifica-header .section-eyebrow::before{display:none;}
+.qualifica-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.qualifica-card{background:#fff;border-radius:16px;padding:32px;border:1px solid var(--border);}
+.qualifica-card.sim{border-color:var(--border-gold);}
+.qualifica-card h3{font-family:'Playfair Display',serif;font-size:19px;margin-bottom:20px;color:var(--azul-profundo);}
+.qualifica-list{list-style:none;display:flex;flex-direction:column;gap:14px;}
+.qualifica-list li{display:flex;align-items:flex-start;gap:10px;font-size:14.5px;color:var(--text-muted);line-height:1.6;padding-left:22px;position:relative;}
+.qualifica-list li::before{content:'✓';color:var(--dourado);font-weight:700;position:absolute;left:0;}
+.qualifica-fechamento{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--verde-salvia);text-align:center;max-width:620px;margin:36px auto 0;line-height:1.5;}
+
+/* QUEM ESTÁ POR TRÁS */
+.time-inner{max-width:1100px;margin:0 auto;}
+.time-header{text-align:center;margin-bottom:48px;}
+.time-header .section-eyebrow{justify-content:center;}
+.time-header .section-eyebrow::before{display:none;}
+.pessoa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto;}
+.pessoa-card{background:#fff;border:1.5px dashed var(--border-gold);border-radius:16px;padding:36px 28px;text-align:center;}
+.pessoa-foto{width:76px;height:76px;border-radius:50%;background:var(--cinza-quente);color:var(--verde-salvia);font-size:30px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+.pessoa-nome{font-family:'Playfair Display',serif;font-size:19px;color:var(--azul-profundo);margin-bottom:4px;}
+.pessoa-cargo{font-size:12.5px;color:var(--verde-salvia);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:14px;}
+.pessoa-linha{font-size:13px;color:var(--text-muted);margin-bottom:4px;}
+.pessoa-linkedin{display:inline-block;margin-top:12px;font-size:12.5px;color:var(--dourado);text-decoration:none;border-bottom:1px solid var(--border-gold);}
 
 /* CTA FINAL (limpo, centralizado) */
 .final-section{text-align:center;}
@@ -179,6 +221,10 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
   .problema-inner{grid-template-columns:1fr;gap:36px;}
   .problema-card{position:static;}
   .cases-grid{grid-template-columns:1fr;}
+  .solucoes-grid{grid-template-columns:1fr;}
+  .ganhos-grid{grid-template-columns:1fr;}
+  .pessoa-grid{grid-template-columns:1fr;}
+  .qualifica-grid{grid-template-columns:1fr;}
   .final-features{grid-template-columns:1fr;}
   .core-step{grid-template-columns:64px 1fr;gap:20px;}
   footer{padding:36px 22px;flex-direction:column;text-align:center;}
@@ -196,7 +242,7 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
 <div class="cursor-ring" id="cursorRing"></div>
 
 <!-- WhatsApp: número do Caio usado como padrão. Trocar por número dedicado da BCore Conecta quando existir. -->
-<a href="https://wa.me/554199506454?text=Olá!%20Vim%20pelo%20site%20da%20BCore%20Conecta%20e%20quero%20agendar%20um%20diagnóstico%20estratégico." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+<a href="https://wa.me/554199506454?text=Olá!%20Vim%20pelo%20site%20da%20BCore%20Conecta%20e%20quero%20solicitar%20meu%20diagnóstico%20comercial." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.114.549 4.1 1.51 5.833L0 24l6.333-1.49A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.6c-1.96 0-3.793-.527-5.367-1.443l-.385-.228-3.985.937.995-3.875-.252-.4A9.556 9.556 0 012.4 12C2.4 6.698 6.698 2.4 12 2.4c5.302 0 9.6 4.298 9.6 9.6 0 5.302-4.298 9.6-9.6 9.6z"/></svg>
 </a>
 
@@ -225,9 +271,9 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
       <div class="dot"></div>
       <span>Mais clareza e direção para sua empresa</span>
     </div>
-    <h1 class="hero-title" id="heroTitle">O crescimento da sua empresa começa quando tudo se conecta.</h1>
+    <h1 class="hero-title" id="heroTitle">Transformamos o potencial comercial da sua empresa em um sistema de crescimento.</h1>
     <p class="hero-tagline" id="heroTagline">Estratégia. Processos. Resultados.</p>
-    <p class="hero-sub" id="heroSub">Conectamos posicionamento, processos comerciais e vendas em uma estrutura única, criada para gerar oportunidades, conquistar mais clientes e sustentar o crescimento da sua empresa com clareza e direção.</p>
+    <p class="hero-sub" id="heroSub">Integramos estratégia, posicionamento, processos, CRM, equipe e indicadores em uma operação comercial estruturada, capaz de gerar mais oportunidades, aumentar a conversão de clientes e sustentar um crescimento consistente, com previsibilidade e controle.</p>
     <div class="hero-actions" id="heroActions">
       <a href="#metodo" class="btn-secondary">Conhecer o Método CORE →</a>
     </div>
@@ -243,7 +289,7 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
     </div>
     <div class="metric-card">
       <div class="val">4</div>
-      <div class="label">Frentes — presença, aquisição, vendas e gestão</div>
+      <div class="label">Frentes — processo, CRM, equipe e gestão</div>
     </div>
     <div class="metric-card">
       <div class="val">∞</div>
@@ -257,35 +303,35 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
   <div class="problema-inner">
     <div class="problema-text reveal">
       <div class="section-eyebrow">O problema real</div>
-      <h2 class="section-title">Sua empresa não precisa de mais ações isoladas. Precisa de <em>um sistema</em>.</h2>
-      <p class="section-sub">Muitas empresas investem em conteúdo, anúncios, atendimento e ferramentas separadas. Cada área funciona de um jeito, as informações não se conectam e ninguém consegue identificar com clareza o que realmente gera oportunidades e vendas.</p>
+      <h2 class="section-title">Sua empresa não precisa de mais ações isoladas. Precisa de <em>uma operação comercial conectada</em>.</h2>
+      <p class="section-sub">Muitas empresas possuem vendedores, recebem contatos e enviam propostas, mas ainda não têm um processo comercial claramente definido. As informações ficam dispersas, cada pessoa conduz as negociações de uma maneira e a gestão não consegue identificar onde as oportunidades estão sendo perdidas.</p>
       <div class="dores-list">
         <div class="dor-item">
           <div class="dor-num">01</div>
           <div>
-            <strong>Crescimento instável</strong>
-            <span>Um mês apresenta bons resultados e o outro não. Sem estratégia e previsibilidade, a empresa não consegue planejar seus próximos passos.</span>
+            <strong>Crescimento imprevisível</strong>
+            <span>Em um mês os resultados aparecem; no outro, desaparecem. Sem processo e indicadores, a empresa não consegue entender o que funcionou nem planejar os próximos passos.</span>
           </div>
         </div>
         <div class="dor-item">
           <div class="dor-num">02</div>
           <div>
-            <strong>Presença que não converte</strong>
-            <span>A empresa aparece nas redes e nos canais digitais, mas essa visibilidade não se transforma em contatos, oportunidades ou vendas.</span>
+            <strong>Vendas dependentes do proprietário</strong>
+            <span>O dono participa de quase todas as negociações e precisa cobrar pessoalmente cada retorno. Quando ele se afasta, o comercial perde ritmo.</span>
           </div>
         </div>
         <div class="dor-item">
           <div class="dor-num">03</div>
           <div>
-            <strong>Oportunidades sem origem</strong>
-            <span>Os contatos chegam pelo WhatsApp, Instagram, Google ou indicação, mas ninguém sabe qual canal realmente trouxe cada oportunidade.</span>
+            <strong>Oportunidades sem rastreabilidade</strong>
+            <span>Os contatos entram por diferentes canais, mas a empresa não sabe quantos avançaram, em qual etapa estão nem por que determinadas negociações foram perdidas.</span>
           </div>
         </div>
         <div class="dor-item">
           <div class="dor-num">04</div>
           <div>
-            <strong>Clientes que não retornam</strong>
-            <span>Sem acompanhamento, organização e relacionamento, clientes compram uma vez e não são estimulados a voltar ou indicar a empresa.</span>
+            <strong>Acompanhamento sem padrão</strong>
+            <span>Cada vendedor conduz a negociação de uma maneira. Os retornos dependem da memória, as propostas ficam sem acompanhamento e boas oportunidades se perdem no processo.</span>
           </div>
         </div>
       </div>
@@ -310,7 +356,7 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
           <div class="pcard-val">?<span> oportunidades</span></div>
         </div>
         <div class="pcard-question">
-          <p>Qual canal está gerando mais resultados para a sua empresa?</p>
+          <p>Quantas oportunidades sua empresa recebeu?</p>
         </div>
       </div>
     </div>
@@ -320,10 +366,10 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
 <!-- TESE -->
 <section class="tese">
   <div class="tese-inner reveal">
-    <h2>Visibilidade sem estratégia não gera vendas. Oportunidades sem processo se perdem. E crescimento sem dados vira apenas tentativa.</h2>
+    <h2>Crescimento não vem de ações soltas. Vem de <em>uma operação conectada</em>.</h2>
     <div class="tese-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
-    <p>Foi por isso que a BCore Conecta deixou de tratar cada ação como uma peça isolada. Integramos posicionamento, presença digital, aquisição, atendimento, CRM e análise de dados em uma única estrutura, preparada para acompanhar toda a jornada do cliente.</p>
-    <p>Não somos apenas uma equipe de conteúdo, anúncios ou tecnologia. Somos o núcleo que conecta estratégia, execução e processo comercial para sua empresa crescer com direção, consistência e clareza.</p>
+    <p>A BCore organiza os elementos que sustentam uma operação comercial: posicionamento, geração de oportunidades, processo de vendas, CRM, gestão e desenvolvimento da equipe.</p>
+    <p>Estruturamos a jornada comercial do primeiro contato ao fechamento, definindo como cada oportunidade deve ser recebida, qualificada, conduzida, acompanhada e mensurada.</p>
   </div>
 </section>
 
@@ -340,65 +386,161 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
         <div class="core-left"><div class="core-letter">C</div><div class="core-line"></div></div>
         <div class="core-content">
           <div class="core-word">Compreender</div>
-          <h3>Estratégias eficazes começam com um diagnóstico preciso</h3>
-          <p>Realizamos uma análise completa da sua empresa para compreender seu posicionamento, seus processos, seu mercado e seus objetivos. A partir desse diagnóstico, identificamos oportunidades, eliminamos gargalos e desenvolvemos estratégias fundamentadas em dados e direcionadas ao crescimento sustentável.</p>
+          <h3>Toda estrutura começa por um diagnóstico preciso</h3>
+          <p>Mapeamos o modelo de negócio, a oferta, o perfil de cliente, a jornada comercial, a equipe, os processos atuais e os indicadores. O objetivo é identificar onde as oportunidades estão sendo geradas, conduzidas e perdidas.</p>
         </div>
       </div>
       <div class="core-step reveal">
         <div class="core-left"><div class="core-letter">O</div><div class="core-line"></div></div>
         <div class="core-content">
           <div class="core-word">Organizar</div>
-          <h3>Cada etapa do crescimento exige método e organização</h3>
-          <p>Desenvolvemos uma estrutura integrada que conecta estratégia, marketing, vendas e atendimento. Definimos prioridades, responsabilidades, fluxos operacionais e indicadores de desempenho para que toda a empresa trabalhe com clareza, eficiência e foco nos resultados.</p>
+          <h3>Transformamos informações em um processo claro</h3>
+          <p>Definimos o funil, as etapas de vendas, os critérios de qualificação, as responsabilidades, as rotinas, os indicadores e a estrutura necessária dentro do CRM.</p>
         </div>
       </div>
       <div class="core-step reveal">
         <div class="core-left"><div class="core-letter">R</div><div class="core-line"></div></div>
         <div class="core-content">
           <div class="core-word">Realizar</div>
-          <h3>Transformamos estratégia em execução</h3>
-          <p>Estruturamos a operação comercial por meio da implantação do CRM (Customer Relationship Management), da organização do funil de vendas e da padronização dos processos de atendimento. Definimos etapas, desenvolvemos scripts, estruturamos fluxos de follow-up, estabelecemos indicadores de desempenho e capacitamos a equipe para conduzir cada oportunidade com eficiência, consistência e foco na conversão.</p>
+          <h3>Tiramos o processo do papel e levamos para a operação</h3>
+          <p>Implementamos a estrutura comercial, configuramos o CRM, desenvolvemos scripts e cadências, organizamos o acompanhamento das oportunidades e orientamos a equipe na aplicação do novo processo.</p>
         </div>
       </div>
       <div class="core-step reveal">
         <div class="core-left"><div class="core-letter">E</div></div>
         <div class="core-content">
           <div class="core-word">Evoluir</div>
-          <h3>A evolução é resultado de decisões bem orientadas</h3>
-          <p>Mensuramos o desempenho da operação, analisamos indicadores e promovemos ajustes contínuos em marketing, vendas, atendimento e CRM. Cada decisão é baseada em dados, garantindo maior eficiência, previsibilidade e crescimento sustentável.</p>
+          <h3>O que é acompanhado pode ser aprimorado</h3>
+          <p>Monitoramos conversão, tempo de resposta, ciclo de vendas, produtividade e motivos de perda. Com base nesses dados, ajustamos a operação e identificamos novas oportunidades de melhoria.</p>
         </div>
       </div>
     </div>
     <div class="metodo-fecho reveal">
-      <p>"A BCore Conecta une estratégia, execução e processos para transformar movimento em crescimento."</p>
+      <p>"A BCore transforma esforço comercial em processo, processo em gestão e gestão em crescimento previsível."</p>
     </div>
   </div>
 </section>
 
-<!-- CASES (placeholder até fechar os primeiros clientes) -->
-<section id="resultados">
+<!-- SOLUÇÕES -->
+<section id="solucoes">
   <div class="cases-inner">
-    <div class="section-eyebrow reveal">Empresas que já conectaram estratégia e crescimento</div>
-    <p class="section-sub reveal" style="margin:0 auto 48px;">Conheça algumas empresas que já contaram com nossa atuação para fortalecer sua presença, organizar processos e gerar novas oportunidades.</p>
-    <!-- PLACEHOLDER: trocar os 3 cards abaixo por logo + contexto + resultado reais assim que fecharem os primeiros clientes -->
-    <div class="cases-grid">
-      <div class="case-card reveal">
-        <div class="case-icon">◆</div>
-        <span class="tag">Em breve</span>
-        <span>Primeiro case documentado</span>
+    <div class="section-eyebrow reveal">O que estruturamos na sua empresa</div>
+    <h2 class="section-title reveal">O que sua empresa pode <em>contratar</em></h2>
+    <div class="solucoes-grid">
+      <div class="solucao-card reveal">
+        <div class="solucao-num">01</div>
+        <h3>Diagnóstico comercial</h3>
+        <p>Analisamos o cenário atual, os gargalos, a jornada de vendas, a equipe, os processos e os indicadores.</p>
       </div>
-      <div class="case-card reveal">
-        <div class="case-icon">◆</div>
-        <span class="tag">Em breve</span>
-        <span>Segundo case documentado</span>
+      <div class="solucao-card reveal">
+        <div class="solucao-num">02</div>
+        <h3>Processo de vendas</h3>
+        <p>Definimos etapas, critérios de avanço, responsabilidades e próximos passos para cada oportunidade.</p>
       </div>
-      <div class="case-card reveal">
-        <div class="case-icon">◆</div>
-        <span class="tag">Em breve</span>
-        <span>Terceiro case documentado</span>
+      <div class="solucao-card reveal">
+        <div class="solucao-num">03</div>
+        <h3>Implementação de CRM</h3>
+        <p>Estruturamos o CRM para centralizar informações, organizar negociações e dar visibilidade à gestão.</p>
+      </div>
+      <div class="solucao-card reveal">
+        <div class="solucao-num">04</div>
+        <h3>Funil, scripts e acompanhamento</h3>
+        <p>Desenvolvemos o funil comercial, roteiros, cadências de contato e processos de follow-up.</p>
+      </div>
+      <div class="solucao-card reveal">
+        <div class="solucao-num">05</div>
+        <h3>Gestão e indicadores</h3>
+        <p>Criamos rotinas de acompanhamento e indicadores para medir conversão, ciclo de vendas, produtividade e motivos de perda.</p>
+      </div>
+      <div class="solucao-card reveal">
+        <div class="solucao-num">06</div>
+        <h3>Desenvolvimento da equipe</h3>
+        <p>Orientamos os profissionais para utilizarem o processo de forma consistente e conduzirem melhor cada oportunidade.</p>
+      </div>
+      <div class="solucao-card reveal">
+        <div class="solucao-num">07</div>
+        <h3>Geração de oportunidades</h3>
+        <p>Estruturamos ações para ampliar a entrada de contatos compatíveis com o perfil de cliente definido pela empresa.</p>
       </div>
     </div>
-    <p class="cases-cta reveal">Sua empresa pode ser o próximo case de crescimento estruturado.</p>
+  </div>
+</section>
+
+<!-- O QUE SUA EMPRESA PASSA A TER -->
+<section class="alt-bg" id="resultados">
+  <div class="cases-inner">
+    <div class="section-eyebrow reveal">Resultados da estrutura</div>
+    <h2 class="section-title reveal">O que sua empresa passa a <em>ter</em></h2>
+    <div class="ganhos-grid reveal">
+      <div class="ganho-item">✓ Um processo comercial documentado</div>
+      <div class="ganho-item">✓ Um funil com etapas e critérios claros</div>
+      <div class="ganho-item">✓ Um CRM organizado</div>
+      <div class="ganho-item">✓ Uma rotina de acompanhamento</div>
+      <div class="ganho-item">✓ Responsabilidades definidas</div>
+      <div class="ganho-item">✓ Indicadores para orientar decisões</div>
+      <div class="ganho-item">✓ Maior visibilidade sobre cada negociação</div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section class="qualifica">
+  <div class="qualifica-inner">
+    <div class="qualifica-header reveal">
+      <div class="section-eyebrow">Pra quem é</div>
+      <h2 class="section-title">A BCore é para empresas que:</h2>
+    </div>
+    <div class="qualifica-grid" style="grid-template-columns:1fr;max-width:640px;margin:0 auto;">
+      <div class="qualifica-card sim reveal">
+        <ul class="qualifica-list">
+          <li>Já possuem uma operação e querem crescer</li>
+          <li>Recebem oportunidades, mas não têm um processo claro</li>
+          <li>Possuem ou estão formando uma equipe de vendas</li>
+          <li>Utilizam CRM sem método ou ainda não possuem CRM</li>
+          <li>Dependem excessivamente do proprietário para vender</li>
+          <li>Querem acompanhar indicadores e tomar decisões com mais segurança</li>
+        </ul>
+      </div>
+    </div>
+    <p class="qualifica-fechamento reveal">Se sua empresa já vende, mas ainda depende do improviso para organizar as oportunidades, existe espaço para estruturar o crescimento.</p>
+  </div>
+</section>
+
+<!-- QUEM ESTÁ POR TRÁS DA BCORE -->
+<section id="quemsomos">
+  <div class="time-inner">
+    <div class="time-header reveal">
+      <div class="section-eyebrow">Quem está por trás da BCore</div>
+      <h2 class="section-title" style="margin:0 auto">A experiência por trás do método</h2>
+      <p class="section-sub reveal" style="margin:16px auto 0;max-width:680px;">A BCore nasceu da experiência prática em comunicação, posicionamento e desenvolvimento de negócios. Com mais de cinco anos de atuação profissional, sua liderança acompanha empresas na organização de processos, implantação de CRM, desenvolvimento de equipes e construção de operações comerciais mais consistentes. Cada projeto é desenvolvido a partir da realidade do negócio, sem fórmulas prontas ou estruturas genéricas.</p>
+    </div>
+    <!-- PLACEHOLDER: substituir por foto real, nome, cargo, link do LinkedIn, tempo de experiência e áreas de atuação de cada profissional -->
+    <div class="pessoa-grid">
+      <div class="pessoa-card reveal">
+        <div class="pessoa-foto">◐</div>
+        <div class="pessoa-nome">[Nome do profissional 1]</div>
+        <div class="pessoa-cargo">[Cargo]</div>
+        <div class="pessoa-linha">[X anos de experiência]</div>
+        <div class="pessoa-linha">[Áreas de atuação]</div>
+        <a href="#" class="pessoa-linkedin">[Link do LinkedIn]</a>
+      </div>
+      <div class="pessoa-card reveal">
+        <div class="pessoa-foto">◐</div>
+        <div class="pessoa-nome">[Nome do profissional 2]</div>
+        <div class="pessoa-cargo">[Cargo]</div>
+        <div class="pessoa-linha">[X anos de experiência]</div>
+        <div class="pessoa-linha">[Áreas de atuação]</div>
+        <a href="#" class="pessoa-linkedin">[Link do LinkedIn]</a>
+      </div>
+      <div class="pessoa-card reveal">
+        <div class="pessoa-foto">◐</div>
+        <div class="pessoa-nome">[Nome do profissional 3]</div>
+        <div class="pessoa-cargo">[Cargo]</div>
+        <div class="pessoa-linha">[X anos de experiência]</div>
+        <div class="pessoa-linha">[Áreas de atuação]</div>
+        <a href="#" class="pessoa-linkedin">[Link do LinkedIn]</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -406,24 +548,24 @@ footer{background:var(--azul-profundo);padding:48px 60px;display:flex;align-item
 <section class="alt-bg final-section" id="faq">
   <div class="final-inner">
     <div class="section-eyebrow reveal">O próximo passo</div>
-    <h2 class="reveal">Sua empresa pode continuar tentando ações isoladas ou começar a crescer com um sistema.</h2>
-    <p class="lead reveal">No diagnóstico estratégico, analisamos o cenário atual da sua empresa, identificamos gargalos de posicionamento, aquisição, atendimento e vendas e mostramos quais próximos passos podem gerar mais clareza, organização e crescimento.</p>
+    <h2 class="reveal">Descubra onde sua operação comercial está perdendo oportunidades.</h2>
+    <p class="lead reveal">No Diagnóstico Comercial BCore, analisamos como sua empresa recebe, distribui, acompanha e conduz as oportunidades. A partir dessa leitura, identificamos os principais gargalos e indicamos quais pontos precisam ser estruturados primeiro.</p>
     <div class="final-cta-btn reveal">
-      <a href="https://wa.me/554199506454?text=Olá!%20Vim%20pelo%20site%20da%20BCore%20Conecta%20e%20quero%20agendar%20meu%20diagnóstico%20estratégico." target="_blank" class="btn-primary">Agendar diagnóstico estratégico</a>
+      <a href="https://wa.me/554199506454?text=Olá!%20Vim%20pelo%20site%20da%20BCore%20Conecta%20e%20quero%20solicitar%20meu%20diagnóstico%20comercial." target="_blank" class="btn-primary">Solicitar meu diagnóstico comercial</a>
     </div>
-    <p class="final-note reveal">Uma conversa inicial para entender seu negócio, seus desafios e suas oportunidades.</p>
+    <p class="final-note reveal">Uma conversa inicial para entender sua operação, seus desafios e o momento atual da empresa.</p>
     <div class="final-features reveal">
       <div class="final-feature">
-        <strong>Diagnóstico personalizado</strong>
-        <span>Análise baseada no momento atual da sua empresa.</span>
+        <strong>Leitura do cenário atual</strong>
+        <span>Identificação dos principais gargalos da operação comercial.</span>
       </div>
       <div class="final-feature">
-        <strong>Sem soluções genéricas</strong>
-        <span>Cada negócio recebe uma orientação compatível com sua realidade.</span>
+        <strong>Análise personalizada</strong>
+        <span>Avaliação baseada na realidade, no processo e nos objetivos da empresa.</span>
       </div>
       <div class="final-feature">
-        <strong>Próximos passos claros</strong>
-        <span>Você termina a conversa entendendo onde estão os principais gargalos.</span>
+        <strong>Direção para os próximos passos</strong>
+        <span>Clareza sobre quais pontos precisam ser organizados antes de acelerar as vendas.</span>
       </div>
     </div>
     <div class="final-tagline reveal">
